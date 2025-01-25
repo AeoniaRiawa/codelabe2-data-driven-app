@@ -16,7 +16,7 @@ def relative_to_assets(path: str, gui="gui") -> Path:
         return ASSETS_PATH_GUI1 / Path(path)
 
 def fetch_questions():
-    url = "https://opentdb.com/api.php?amount=10&difficulty=hard&type=boolean"
+    url = "https://opentdb.com/api.php?amount=40&difficulty=hard&type=boolean"
     response = requests.get(url)
     data = response.json()
     #decode HTML entities for each question
